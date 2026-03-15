@@ -1,0 +1,81 @@
+# Python bytecode
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+venv/
+.env/
+env/
+ENV/
+
+# Environment variables
+
+.env
+.env.*
+
+# Python packaging
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE / Editor files
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+
+# Logs
+
+*.log
+
+# OS files
+
+Thumbs.db
+.DS_Store
+
+# Upload folder (temporary files)
+
+uploads/
+
+# Mongo local data (if any)
+
+*.db
+*.sqlite3
+
+# Test / coverage
+
+.coverage
+coverage.xml
+htmlcov/
+
+# Pytest cache
+
+.pytest_cache/
+
+# Mypy cache
+
+.mypy_cache/
+
+# FastAPI cache
+
+**pypackages**/
+
+# Temporary files
+
+*.tmp
+*.temp
+
+# Node (if frontend added later)
+
+node_modules/
+
+# API keys or config backups
+
+config.local.*
