@@ -238,8 +238,7 @@ peblo-ai-quiz-engine
 │   │   ├── pdf_service.py
 │   │   ├── chunk_service.py
 │   │   ├── llm_service.py
-│   │   ├── adaptive_service.py
-│   │
+│   │   └── adaptive_service.py
 │
 │   └── utils
 │       └── question_filter.py
