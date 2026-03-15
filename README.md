@@ -28,9 +28,9 @@ This project demonstrates:
 
 The system follows a modular AI content processing pipeline.
 
-````
 ## Architecture Diagram
-```text
+
+```
             +---------------------+
             |      PDF Upload     |
             +----------+----------+
@@ -79,7 +79,7 @@ The system follows a modular AI content processing pipeline.
             +---------------------+
             | Adaptive Difficulty |
             +---------------------+
-````
+```
 
 ---
 
