@@ -1,0 +1,47 @@
+{
+  "difficulty": "easy",
+  "questions": [
+    {
+      "_id": "69b7039f3086db797f1fe7be",
+      "chunk_id": "69b703743086db797f1fe7bd",
+      "source_id": "85354bb0-7db0-47a9-92bd-f05f7b786e56",
+      "question": "Which of the following is an example of an adjective according to the text?",
+      "type": "MCQ",
+      "options": [
+        "Run",
+        "Book",
+        "Tall",
+        "Teacher"
+      ],
+      "answer": "Tall",
+      "difficulty": "easy",
+      "quality_score": 3
+    },
+    {
+      "_id": "69b7039f3086db797f1fe7bf",
+      "chunk_id": "69b703743086db797f1fe7bd",
+      "source_id": "85354bb0-7db0-47a9-92bd-f05f7b786e56",
+      "question": "A sentence must begin with a capital letter and end with punctuation.",
+      "type": "TrueFalse",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "difficulty": "easy",
+      "quality_score": 2
+    },
+    {
+      "_id": "69b7039f3086db797f1fe7c0",
+      "chunk_id": "69b703743086db797f1fe7bd",
+      "source_id": "85354bb0-7db0-47a9-92bd-f05f7b786e56",
+      "question": "A ____ shows action, such as run, jump, or read.",
+      "type": "FillBlank",
+      "options": [],
+      "answer": "verb",
+      "difficulty": "easy",
+      "quality_score": 2
+    }
+  ],
+  "cached": false
+}

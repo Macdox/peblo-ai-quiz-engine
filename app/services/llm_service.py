@@ -1,12 +1,13 @@
 import google.generativeai as genai
 import os
 import json
+import time
 
 genai.configure(api_key=os.getenv("LLM_API_KEY"))
 
-model = genai.GenerativeModel("gemini-3-flash-preview")
+model = genai.GenerativeModel("gemini-2.0-flash")
 
-def generate_questions_from_text(text):
+def generate_questions_from_text(text, retries=3):
 
     prompt = f"""
 Generate 3 quiz questions from the following educational text.
@@ -46,6 +47,17 @@ Text:
 {text}
 """
 
-    response = model.generate_content(prompt)
+    for attempt in range(retries):
+        try:
+            response = model.generate_content(prompt)
+            return json.loads(response.text)
+        except Exception as e:
+            if "429" in str(e) or "ResourceExhausted" in str(e):
+                wait = 10 * (attempt + 1)  # 10s, 20s, 30s
+                print(f"Rate limit hit. Waiting {wait}s before retry {attempt + 1}/{retries}...")
+                time.sleep(wait)
+            else:
+                raise e
 
-    return json.loads(response.text)
+    print("Max retries reached. Skipping this chunk.")
+    return []
